@@ -1,18 +1,27 @@
 .photo {
-  border: 2px solid green;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 img {
   object-fit: scale-down;
   max-width: 100%;
   height: auto;
-  border: 1px solid blue;
   vertical-align: middle;
+  box-shadow: var(--shadow-color, #f00) 0 var(--shadow-width)
+    var(--shadow-width) 0;
+  transition: 0.3s transform;
+}
+
+img:hover {
+  transform: rotate3d(1, 1, 0, -2deg);
 }
 
 .photoRow {
   height: 300px;
+  display: flex;
+  align-items: top;
+  flex-direction: row;
 }
