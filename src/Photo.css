@@ -1,0 +1,14 @@
+.photo {
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid blue;
+  vertical-align: middle;
+}
