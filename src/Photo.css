@@ -1,14 +1,18 @@
 .photo {
   border: 2px solid green;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 
 img {
-  object-fit: contain;
+  object-fit: scale-down;
   max-width: 100%;
   height: auto;
   border: 1px solid blue;
   vertical-align: middle;
+}
+
+.photoRow {
+  height: 300px;
 }

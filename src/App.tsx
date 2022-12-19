@@ -1,13 +1,11 @@
 import "./styles.css";
 import Photo from "./Photo";
-
-const TEST_IMAGE =
-  "https://www.design-scapes-inc.com/wp-content/uploads/2021/08/los-angeles-landscape-designers.jpg";
+import { IMAGES } from "./images";
 
 export default function App() {
-  return (
-    <div className="App">
-      <Photo src={TEST_IMAGE} size={300} alt="Demo" />
-    </div>
-  );
+  const photos = IMAGES.map((imgData) => (
+    <Photo src={imgData.src} size={300} alt="Demo" />
+  ));
+  const row = <div className="photoRow">{photos}</div>;
+  return <div className="App">{row}</div>;
 }
